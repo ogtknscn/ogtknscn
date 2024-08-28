@@ -19,7 +19,7 @@
 <a href="https://www.kaggle.com/sezaicantken">
     <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=Kaggle&logoColor=white" alt="Kaggle">
 </a>
-<a href="https://medium.com/@berkayalann">
+<a href="https://medium.com/@caanogutkens">
     <img src="https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white`" alt="Medium">
 </a>
 <a href="https://stackoverflow.com/users/26837236/johngrinding">
@@ -27,7 +27,7 @@
 </a>
 
 <a href="https://github.com/ogtknscn">
-    <img src="https://github-stats-alpha.vercel.app/api?username=berkayalan&cc=22272e&tc=37BCF6&ic=fff&bc=0000">
+    <img src="https://github-stats-alpha.vercel.app/api?username=ogtknscn&cc=22272e&tc=37BCF6&ic=fff&bc=0000">
 </a>
   
 ![Can's Profile Views](https://komarev.com/ghpvc/?username=ogtknscn&color=blue)
