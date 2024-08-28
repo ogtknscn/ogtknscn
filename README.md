@@ -1,8 +1,47 @@
-### Hi there 👋
-I'm Can; Learning Design, Development, and Analytics as a Computer Engineer. I realized that the area I enjoyed most was data, while I was primarily doing Unity Game Development and Game Design. Currently learning Python, Power BI, SQL, Tableau, and everything related to data analysis.
+**Hi, I am Can!**
 
-Skills: C / C# / Python / NumPy / Pandas / SQL
+## I am a Computer Engineer.
 
-- 🌱 I’m currently learning Data Analytics
+* 💻 currently working for became as a Data Analyst.
+* 🎓 graduated in Computer Engineering from Cukurova University.
+* ☁️ trying to develop myself in data reading, visualization, and decision-making based on data.
 
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ogtknscn)](https://github.com/anuraghazra/github-readme-stats)
+
+<a href="https://github.com/ogtknscn">
+</a>
+<br/>
+<a href="https://www.linkedin.com/in/sezai-can-ogutken/">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Linkedin">
+</a>
+<a href="mailto:ogutken.in@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Mail">
+</a>
+<a href="https://www.kaggle.com/sezaicantken">
+    <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=Kaggle&logoColor=white" alt="Kaggle">
+</a>
+<a href="https://medium.com/@berkayalann">
+    <img src="https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white`" alt="Medium">
+</a>
+<a href="https://stackoverflow.com/users/26837236/johngrinding">
+    <img src="https://img.shields.io/badge/Stack_Overflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white" alt="Stackoverflow">
+</a>
+
+<a href="https://github.com/ogtknscn">
+    <img src="https://github-stats-alpha.vercel.app/api?username=berkayalan&cc=22272e&tc=37BCF6&ic=fff&bc=0000">
+</a>
+  
+![Can's Profile Views](https://komarev.com/ghpvc/?username=ogtknscn&color=blue)
+
+<br/> 
+
+<details>
+<summary>📈 Stats</summary>
+<br>
+My Github Stats
+
+![](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ogtknscn&theme=dracula) 
+
+![](http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=ogtknscn&theme=dracula) 
+![](http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=ogtknscnn&theme=dracula)
+
+</details>
