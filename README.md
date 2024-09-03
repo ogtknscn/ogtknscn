@@ -1,6 +1,6 @@
 **Hi, I am Can!**
 
-## I am a Computer Engineer.
+## I am a Data Analyst.
 
 * 💻 currently working for became as a Data Analyst.
 * 🎓 graduated in Computer Engineering from Cukurova University.
