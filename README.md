@@ -4,7 +4,7 @@
 
 * 💻 currently working for became as a Data Analyst.
 * 🎓 graduated in Computer Engineering from Cukurova University.
-* ☁️ trying to develop myself in data reading, visualization, and decision-making based on data.
+* ☁️ trying to develop myself in data reading, visualization, and decision-making.
 
 
 <a href="https://github.com/ogtknscn">
