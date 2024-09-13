@@ -1,11 +1,12 @@
 **Hi, I am Can!**
 
-## I am an Engineer.
+## I am an Data Scientist/Engineer.
 
-* 💻 currently working for became as a Data Analyst.
+* 💻 currently working for developing myself on a Machine Learning.
 * 🎓 graduated in Computer Engineering from Cukurova University.
 * ☁️ trying to develop myself in data reading, visualization, and decision-making.
 
+https://www.datascienceportfol.io/ogutkencan
 
 <a href="https://github.com/ogtknscn">
 </a>
