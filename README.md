@@ -1,8 +1,8 @@
 **Hi, I am Can!**
 
-## I am an Data Scientist/Engineer.
+## I am an Jr Data Analyst.
 
-* 💻 currently working for developing myself on a Machine Learning.
+* 💻 currently looking for Data Analysis Jobs.
 * 🎓 graduated in Computer Engineering from Cukurova University.
 * ☁️ trying to develop myself in data reading, visualization, and decision-making.
 
