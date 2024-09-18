@@ -1,6 +1,6 @@
 **Hi, I am Can!**
 
-## I am an Jr Data Analyst.
+## I am a Jr Data Analyst.
 
 * 💻 currently looking for Data Analysis Jobs.
 * 🎓 graduated in Computer Engineering from Cukurova University.
