@@ -1,12 +1,7 @@
 **Hi, I am Can!**
 
-## I am a Jr Data Analyst.
-
-[* 💻 currently looking for Data Analysis Jobs.
-* 🎓 graduated in Computer Engineering from Cukurova University.
-* ☁️ trying to develop myself in data reading, visualization, and decision-making.](https://www.datascienceportfol.io/ogutkencan)
-
-
+**Data Analyst Portfolio**
+https://www.datascienceportfol.io/ogutkencan
 
 <a href="https://github.com/ogtknscn">
 </a>
