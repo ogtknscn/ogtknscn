@@ -1,5 +1,7 @@
 **Hi, I am Can!**
 
+I'm a Data Analyst with a bachelor's degree in computer engineering from Cukurova University, I am equipped with a robust foundation in DBMS, Python, Excel, Tableau and PostgreSQL. My academic and professional journey reflects a deep commitment to leveraging technical expertise for innovative solutions, aiming to harness data for smart business decisions and continuous growth in the dynamic field of data science.
+
 **Data Analyst Portfolio**
 https://www.datascienceportfol.io/ogutkencan
 
