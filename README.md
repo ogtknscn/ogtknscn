@@ -2,7 +2,7 @@
 
 As a computer engineer with experience leading teams of 20+ people, I am pursuing a career in project management, data management and data science with the aim of building strong professional connections and contributing to meaningful, long-term projects.
 
-**Data Analyst Portfolio**
+**Portfolio**
 https://www.datascienceportfol.io/ogutkencan
 
 <a href="https://github.com/ogtknscn">
