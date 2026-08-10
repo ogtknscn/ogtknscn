@@ -150,8 +150,8 @@
     <circle cx="152.5" cy="85" r="5" fill="#00d4ff" opacity="0.7"><animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" begin="0.0s" repeatCount="indefinite"/><animate attributeName="r" values="4.5;5.5;4.5" dur="3s" begin="0.0s" repeatCount="indefinite"/></circle>
     <circle cx="152.5" cy="85" r="2" fill="#ffffff" opacity="0.9"/>
     <text x="152.5" y="111" fill="#f1f5f9" font-size="14" font-weight="bold" font-family="sans-serif" text-anchor="middle">rag-eval-kit</text>
-    <text x="152.5" y="129" fill="#94a3b8" font-size="11" font-family="sans-serif" text-anchor="middle">Dependency-free harness for</text>
-    <text x="152.5" y="144" fill="#94a3b8" font-size="11" font-family="sans-serif" text-anchor="middle">scoring RAG pipeline outputs:</text>
+    <text x="152.5" y="129" fill="#94a3b8" font-size="11" font-family="sans-serif" text-anchor="middle">Scores RAG pipeline outputs for</text>
+    <text x="152.5" y="144" fill="#94a3b8" font-size="11" font-family="sans-serif" text-anchor="middle">context grounding and relevancy.</text>
     <rect x="109.5" y="163" width="86" height="18" rx="9" ry="9" fill="#00d4ff" opacity="0.12"/>
     <text x="152.5" y="175" fill="#00d4ff" font-size="9" font-family="monospace" text-anchor="middle" opacity="0.85">AI Systems</text>
   </g>
@@ -168,7 +168,7 @@
     <circle cx="425.0" cy="85" r="2" fill="#ffffff" opacity="0.9"/>
     <text x="425.0" y="111" fill="#f1f5f9" font-size="14" font-weight="bold" font-family="sans-serif" text-anchor="middle">gdd-tool</text>
     <text x="425.0" y="129" fill="#94a3b8" font-size="11" font-family="sans-serif" text-anchor="middle">Offline-first visual Game Design</text>
-    <text x="425.0" y="144" fill="#94a3b8" font-size="11" font-family="sans-serif" text-anchor="middle">Document workspace built with</text>
+    <text x="425.0" y="144" fill="#94a3b8" font-size="11" font-family="sans-serif" text-anchor="middle">Document workspace.</text>
     <rect x="361.0" y="163" width="128" height="18" rx="9" ry="9" fill="#a78bfa" opacity="0.12"/>
     <text x="425.0" y="175" fill="#a78bfa" font-size="9" font-family="monospace" text-anchor="middle" opacity="0.85">Game Development</text>
   </g>
@@ -184,8 +184,7 @@
     <circle cx="697.5" cy="85" r="5" fill="#ffb020" opacity="0.7"><animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" begin="0.6s" repeatCount="indefinite"/><animate attributeName="r" values="4.5;5.5;4.5" dur="3s" begin="0.6s" repeatCount="indefinite"/></circle>
     <circle cx="697.5" cy="85" r="2" fill="#ffffff" opacity="0.9"/>
     <text x="697.5" y="111" fill="#f1f5f9" font-size="14" font-weight="bold" font-family="sans-serif" text-anchor="middle">viam-site</text>
-    <text x="697.5" y="129" fill="#94a3b8" font-size="11" font-family="sans-serif" text-anchor="middle">Website for the Hi Games Viam</text>
-    <text x="697.5" y="144" fill="#94a3b8" font-size="11" font-family="sans-serif" text-anchor="middle">studio.</text>
+    <text x="697.5" y="129" fill="#94a3b8" font-size="11" font-family="sans-serif" text-anchor="middle">Website for the studio.</text>
     <rect x="626.5" y="163" width="142" height="18" rx="9" ry="9" fill="#ffb020" opacity="0.12"/>
     <text x="697.5" y="175" fill="#ffb020" font-size="9" font-family="monospace" text-anchor="middle" opacity="0.85">Product &amp; Delivery</text>
   </g>
