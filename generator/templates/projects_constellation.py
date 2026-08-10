@@ -256,8 +256,13 @@ def _build_project_card(i, proj, arm, color, card_width, card_x, theme):
         f'text-anchor="middle">{esc(repo_name)}</text>'
     )
 
-    # Description lines (centered)
-    for j, line in enumerate(desc_lines[:2]):
+    # Description lines (centered). Truncating to 2 lines can cut a
+    # sentence mid-word; mark that with a trailing ellipsis instead of
+    # letting it dangle on a comma or colon.
+    visible_lines = desc_lines[:2]
+    if len(desc_lines) > 2 and visible_lines:
+        visible_lines[-1] = visible_lines[-1].rstrip(".,;:") + "..."
+    for j, line in enumerate(visible_lines):
         y_pos = 129 + j * 15
         card_parts.append(
             f'    <text x="{card_cx}" y="{y_pos}" fill="{theme["text_dim"]}" '

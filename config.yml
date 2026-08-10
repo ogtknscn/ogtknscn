@@ -56,13 +56,13 @@ galaxy_arms:
 projects:
   - repo: "ogtknscn/rag-eval-kit"
     arm: 0
-    description: "Dependency-free harness for scoring RAG pipeline outputs: context precision, faithfulness, answer relevancy."
+    description: "Scores RAG pipeline outputs for context grounding and relevancy."
   - repo: "ogtknscn/gdd-tool"
     arm: 1
-    description: "Offline-first visual Game Design Document workspace built with Tauri and React."
+    description: "Offline-first visual Game Design Document workspace."
   - repo: "ogtknscn/viam-site"
     arm: 2
-    description: "Website for the Hi Games Viam studio."
+    description: "Website for the studio."
 
 # Theme color overrides (optional, defaults to deep space palette)
 theme:
