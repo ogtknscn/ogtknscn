@@ -75,15 +75,15 @@ def generate(args):
         try:
             stats = api.fetch_stats()
         except (requests.exceptions.RequestException, ValueError, KeyError) as e:
-            logger.warning("Could not fetch stats (%s). Using defaults.", e)
-            stats = {"commits": 0, "stars": 0, "prs": 0, "issues": 0, "repos": 0}
+            logger.error("Could not fetch stats (%s). Aborting instead of publishing zeroed stats.", e)
+            sys.exit(1)
 
         logger.info("Fetching languages...")
         try:
             languages = api.fetch_languages()
         except (requests.exceptions.RequestException, ValueError, KeyError) as e:
-            logger.warning("Could not fetch languages (%s). Using defaults.", e)
-            languages = {}
+            logger.error("Could not fetch languages (%s). Aborting instead of publishing an empty chart.", e)
+            sys.exit(1)
 
     logger.info("Stats: %s", stats)
     logger.info("Languages: %d found", len(languages))

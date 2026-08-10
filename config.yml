@@ -44,7 +44,13 @@ galaxy_arms:
       - "Docker"
 
 # Featured projects shown as constellation stars
-projects: []
+projects:
+  - repo: "ogtknscn/gdd-tool"
+    arm: 0
+    description: "Offline-first visual Game Design Document workspace built with Tauri and React."
+  - repo: "ogtknscn/viam-site"
+    arm: 1
+    description: "Website for the Hi Games Viam studio."
 
 # Theme color overrides (optional, defaults to deep space palette)
 theme:

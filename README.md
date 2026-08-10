@@ -41,3 +41,7 @@ turning ideas into shipped games faster.
     <img src="https://img.shields.io/badge/-Email-080c14?style=for-the-badge&logo=gmail&logoColor=00d4ff" alt="Email"/>
   </a>
 </div>
+
+<br/>
+
+<p align="center"><sub>Generated with <a href="https://github.com/vinimlo/galaxy-profile">galaxy-profile</a>.</sub></p>
