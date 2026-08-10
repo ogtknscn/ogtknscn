@@ -27,11 +27,12 @@
 
 <br/>
 
-Founder of an AI-orchestrated game studio, building games and the tooling
-that ships them. Focused on production pipelines, agent orchestration, and
-turning ideas into shipped games faster.
-
-**Currently at** Hi Games Viam
+Product Manager with a Computer Engineering background, started out
+designing game mechanics and building 3D assets before moving into
+leading cross-functional teams and end-to-end product lifecycles.
+Currently researching game dev data analytics, retention metrics, and
+modern Agile practices, staying hands-on with DevOps and release
+engineering along the way.
 </details>
 
 <br/>
