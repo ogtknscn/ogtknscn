@@ -6,7 +6,7 @@ username: ogtknscn
 # Profile information displayed in the galaxy header
 profile:
   name: "Sezai Can Ogutken"
-  tagline: "Product Manager & Game Studio Founder"
+  tagline: "Product Manager building AI-augmented development workflows"
   company: "Hi Games Viam"
   location: "Turkey"
   bio: |
@@ -27,32 +27,32 @@ social:
 
 # Galaxy arms represent your core focus areas
 galaxy_arms:
-  - name: "Game Dev"
+  - name: "AI Systems"
+    color: "synapse_cyan"
+    items:
+      - "RAG"
+      - "LLM Evaluation"
+      - "Agent Orchestration"
+  - name: "Game Development"
     color: "dendrite_violet"
     items:
       - "Unity"
       - "C#"
       - "Python"
-  - name: "Backend"
-    color: "synapse_cyan"
-    items:
-      - "Python"
-      - "FastAPI"
-      - "LanceDB"
-  - name: "DevOps"
+  - name: "Product & Delivery"
     color: "axon_amber"
     items:
-      - "Git"
-      - "GitHub Actions"
-      - "Docker"
+      - "Agile"
+      - "Retention Analytics"
+      - "CI/CD"
 
 # Featured projects shown as constellation stars
 projects:
   - repo: "ogtknscn/gdd-tool"
-    arm: 0
+    arm: 1
     description: "Offline-first visual Game Design Document workspace built with Tauri and React."
   - repo: "ogtknscn/viam-site"
-    arm: 1
+    arm: 2
     description: "Website for the Hi Games Viam studio."
 
 # Theme color overrides (optional, defaults to deep space palette)
