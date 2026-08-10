@@ -54,6 +54,9 @@ galaxy_arms:
 
 # Featured projects shown as constellation stars
 projects:
+  - repo: "ogtknscn/rag-eval-kit"
+    arm: 0
+    description: "Dependency-free harness for scoring RAG pipeline outputs: context precision, faithfulness, answer relevancy."
   - repo: "ogtknscn/gdd-tool"
     arm: 1
     description: "Offline-first visual Game Design Document workspace built with Tauri and React."
