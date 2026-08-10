@@ -1,0 +1,77 @@
+# Galaxy Profile README Configuration
+
+# Your GitHub username (required)
+username: ogtknscn
+
+# Profile information displayed in the galaxy header
+profile:
+  name: "Sezai Can Ogutken"
+  tagline: "Product Manager & Game Studio Founder"
+  company: "Hi Games Viam"
+  location: "Turkey"
+  bio: |
+    Founder of an AI-orchestrated game studio, building games and the
+    tooling that ships them.
+    Focused on production pipelines, agent orchestration, and turning
+    ideas into shipped games faster.
+  philosophy: '"Ship the idea, then let the data tell you if it was right."'
+
+# Social links displayed at the bottom of the profile
+social:
+  email: "cansogutken@gmail.com"
+  linkedin: ""
+  website: ""
+
+# Galaxy arms represent your core focus areas
+galaxy_arms:
+  - name: "Game Dev"
+    color: "dendrite_violet"
+    items:
+      - "Unity"
+      - "C#"
+      - "Python"
+  - name: "Backend"
+    color: "synapse_cyan"
+    items:
+      - "Python"
+      - "FastAPI"
+      - "LanceDB"
+  - name: "DevOps"
+    color: "axon_amber"
+    items:
+      - "Git"
+      - "GitHub Actions"
+      - "Docker"
+
+# Featured projects shown as constellation stars
+projects: []
+
+# Theme color overrides (optional, defaults to deep space palette)
+theme:
+  void: "#080c14"
+  nebula: "#0f1623"
+  star_dust: "#1a2332"
+  synapse_cyan: "#00d4ff"
+  dendrite_violet: "#a78bfa"
+  axon_amber: "#ffb020"
+  text_bright: "#f1f5f9"
+  text_dim: "#94a3b8"
+  text_faint: "#64748b"
+
+# Stats configuration
+stats:
+  metrics:
+    - "commits"
+    - "stars"
+    - "prs"
+    - "issues"
+    - "repos"
+
+# Language display settings
+languages:
+  exclude:
+    - "HTML"
+    - "CSS"
+    - "Shell"
+    - "Makefile"
+  max_display: 8
