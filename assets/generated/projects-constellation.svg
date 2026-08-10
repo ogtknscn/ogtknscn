@@ -11,7 +11,7 @@
     </filter>
     <filter id="proj-glow-1" x="-80%" y="-80%" width="260%" height="260%">
       <feGaussianBlur stdDeviation="4" in="SourceGraphic" result="blur"/>
-      <feFlood flood-color="#00d4ff" flood-opacity="0.6" result="color"/>
+      <feFlood flood-color="#ffb020" flood-opacity="0.6" result="color"/>
       <feComposite in="color" in2="blur" operator="in" result="glow"/>
       <feMerge>
         <feMergeNode in="glow"/>
@@ -31,7 +31,7 @@
     </linearGradient>
     <linearGradient id="conn-grad" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.4"/>
-      <stop offset="100%" stop-color="#00d4ff" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#ffb020" stop-opacity="0.4"/>
     </linearGradient>
     <clipPath id="card-clip-0">
       <rect x="56.666666666666664" y="55" width="340" height="140" rx="8" ry="8"/>
@@ -135,24 +135,24 @@
     <text x="226.66666666666666" y="111" fill="#f1f5f9" font-size="14" font-weight="bold" font-family="sans-serif" text-anchor="middle">gdd-tool</text>
     <text x="226.66666666666666" y="129" fill="#94a3b8" font-size="11" font-family="sans-serif" text-anchor="middle">Offline-first visual Game Design Document</text>
     <text x="226.66666666666666" y="144" fill="#94a3b8" font-size="11" font-family="sans-serif" text-anchor="middle">workspace built with Tauri and React.</text>
-    <rect x="190.66666666666666" y="163" width="72" height="18" rx="9" ry="9" fill="#a78bfa" opacity="0.12"/>
-    <text x="226.66666666666666" y="175" fill="#a78bfa" font-size="9" font-family="monospace" text-anchor="middle" opacity="0.85">Game Dev</text>
+    <rect x="162.66666666666666" y="163" width="128" height="18" rx="9" ry="9" fill="#a78bfa" opacity="0.12"/>
+    <text x="226.66666666666666" y="175" fill="#a78bfa" font-size="9" font-family="monospace" text-anchor="middle" opacity="0.85">Game Development</text>
   </g>
   <g opacity="0" style="animation: card-appear 0.6s ease 0.3s forwards">
     <rect x="453.33333333333337" y="55" width="340" height="140" rx="8" ry="8" fill="url(#card-bg-1)" stroke="#1a2332" stroke-width="1"/>
     <g clip-path="url(#card-clip-1)">
-      <circle cx="555.3333333333334" cy="90" r="50" fill="#00d4ff" opacity="0.025" filter="url(#card-nebula)"/>
-      <circle cx="691.3333333333334" cy="150" r="40" fill="#00d4ff" opacity="0.03" filter="url(#card-nebula)"/>
-      <rect x="453.33333333333337" y="55" width="340" height="2" fill="#00d4ff" opacity="0.1"><animateTransform attributeName="transform" type="translate" from="0 0" to="0 140" dur="6s" repeatCount="indefinite"/></rect>
+      <circle cx="555.3333333333334" cy="90" r="50" fill="#ffb020" opacity="0.025" filter="url(#card-nebula)"/>
+      <circle cx="691.3333333333334" cy="150" r="40" fill="#ffb020" opacity="0.03" filter="url(#card-nebula)"/>
+      <rect x="453.33333333333337" y="55" width="340" height="2" fill="#ffb020" opacity="0.1"><animateTransform attributeName="transform" type="translate" from="0 0" to="0 140" dur="6s" repeatCount="indefinite"/></rect>
     </g>
-    <circle cx="623.3333333333334" cy="85" r="14" fill="none" stroke="#00d4ff" stroke-width="0.8" stroke-dasharray="4,3" opacity="0.5"><animateTransform attributeName="transform" type="rotate" from="0 623.3333333333334 85" to="360 623.3333333333334 85" dur="12s" repeatCount="indefinite"/></circle>
-    <circle cx="623.3333333333334" cy="85" r="8" fill="#00d4ff" opacity="0.15" filter="url(#proj-glow-1)"/>
-    <circle cx="623.3333333333334" cy="85" r="5" fill="#00d4ff" opacity="0.7"><animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" begin="0.3s" repeatCount="indefinite"/><animate attributeName="r" values="4.5;5.5;4.5" dur="3s" begin="0.3s" repeatCount="indefinite"/></circle>
+    <circle cx="623.3333333333334" cy="85" r="14" fill="none" stroke="#ffb020" stroke-width="0.8" stroke-dasharray="4,3" opacity="0.5"><animateTransform attributeName="transform" type="rotate" from="0 623.3333333333334 85" to="360 623.3333333333334 85" dur="12s" repeatCount="indefinite"/></circle>
+    <circle cx="623.3333333333334" cy="85" r="8" fill="#ffb020" opacity="0.15" filter="url(#proj-glow-1)"/>
+    <circle cx="623.3333333333334" cy="85" r="5" fill="#ffb020" opacity="0.7"><animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" begin="0.3s" repeatCount="indefinite"/><animate attributeName="r" values="4.5;5.5;4.5" dur="3s" begin="0.3s" repeatCount="indefinite"/></circle>
     <circle cx="623.3333333333334" cy="85" r="2" fill="#ffffff" opacity="0.9"/>
     <text x="623.3333333333334" y="111" fill="#f1f5f9" font-size="14" font-weight="bold" font-family="sans-serif" text-anchor="middle">viam-site</text>
     <text x="623.3333333333334" y="129" fill="#94a3b8" font-size="11" font-family="sans-serif" text-anchor="middle">Website for the Hi Games Viam studio.</text>
-    <rect x="590.8333333333334" y="163" width="65" height="18" rx="9" ry="9" fill="#00d4ff" opacity="0.12"/>
-    <text x="623.3333333333334" y="175" fill="#00d4ff" font-size="9" font-family="monospace" text-anchor="middle" opacity="0.85">Backend</text>
+    <rect x="552.3333333333334" y="163" width="142" height="18" rx="9" ry="9" fill="#ffb020" opacity="0.12"/>
+    <text x="623.3333333333334" y="175" fill="#ffb020" font-size="9" font-family="monospace" text-anchor="middle" opacity="0.85">Product &amp; Delivery</text>
   </g>
 
   <!-- Global scan line -->
