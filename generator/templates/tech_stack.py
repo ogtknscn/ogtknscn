@@ -83,9 +83,9 @@ def _build_radar_sectors(sector_data, rcx, rcy, radius, theme):
             f'stroke="{sec["color"]}" stroke-opacity="0.3" stroke-width="0.5"/>'
         )
 
-    # Sector boundary lines (radial lines at sector edges)
-    for i in range(len(sector_data)):
-        angle_deg = i * 120
+    # Sector boundary lines (radial lines at sector edges, one per sector start)
+    for sec in sector_data:
+        angle_deg = sec["start_deg"]
         angle_rad = math.radians(angle_deg - 90)
         lx = rcx + radius * math.cos(angle_rad)
         ly = rcy + radius * math.sin(angle_rad)
@@ -179,13 +179,6 @@ def _build_radar_labels_and_dots(sector_data, galaxy_arms, rcx, rcy, radius, the
             f'font-size="9" font-family="monospace" text-anchor="{anchor}" '
             f'dominant-baseline="middle">{esc(sec["name"])}</text>'
         )
-        # Item count below name
-        count_y = ly + 12
-        parts.append(
-            f'    <text x="{lx:.1f}" y="{count_y:.1f}" fill="{theme["text_faint"]}" '
-            f'font-size="8" font-family="monospace" text-anchor="{anchor}" '
-            f'dominant-baseline="middle">({sec["items"]})</text>'
-        )
 
     # Dots: one per item per sector, unconditional
     radii_cycle = [24, 40, 56]
@@ -251,18 +244,25 @@ def render(
     # Right side: Focus Sectors radar
     all_arm_colors = resolve_arm_colors(galaxy_arms, theme)
 
-    # Build sector data
+    # Build sector data. Sector angles are proportional to each arm's
+    # "weight" (defaults to 1 if unset) rather than a fixed equal split,
+    # so the radar's slice sizes carry real signal instead of always
+    # looking identical regardless of emphasis.
+    total_weight = sum(arm.get("weight", 1) for arm in galaxy_arms) or 1
+    edge_pad_deg = 2
     sector_data = []
+    cursor_deg = 0
     for i, arm in enumerate(galaxy_arms):
         color = all_arm_colors[i]
-        items = arm.get("items", [])
+        weight = arm.get("weight", 1)
+        span_deg = 360 * weight / total_weight
         sector_data.append({
             "name": arm["name"],
             "color": color,
-            "items": len(items),
-            "start_deg": i * 120 + 1,
-            "end_deg": (i + 1) * 120 - 1,
+            "start_deg": cursor_deg + edge_pad_deg,
+            "end_deg": cursor_deg + span_deg - edge_pad_deg,
         })
+        cursor_deg += span_deg
 
     # Radar geometry
     radius = 65

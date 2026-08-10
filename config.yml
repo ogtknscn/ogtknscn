@@ -25,22 +25,28 @@ social:
   linkedin: ""
   website: ""
 
-# Galaxy arms represent your core focus areas
+# Galaxy arms represent your core focus areas.
+# "weight" sizes each arm's radar sector proportionally (defaults to 1
+# if omitted); it's an honest signal of emphasis, not just a fixed
+# equal split of the circle.
 galaxy_arms:
   - name: "AI Systems"
     color: "synapse_cyan"
+    weight: 4
     items:
       - "RAG"
       - "LLM Evaluation"
       - "Agent Orchestration"
   - name: "Game Development"
     color: "dendrite_violet"
+    weight: 3
     items:
-      - "Unity"
-      - "C#"
-      - "Python"
+      - "Gameplay Systems"
+      - "3D Pipelines"
+      - "Engine Tooling"
   - name: "Product & Delivery"
     color: "axon_amber"
+    weight: 3
     items:
       - "Agile"
       - "Retention Analytics"
