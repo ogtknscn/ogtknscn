@@ -3,6 +3,7 @@
 import logging
 import os
 import time
+from datetime import datetime, timedelta, timezone
 
 import requests
 
@@ -64,9 +65,7 @@ class GitHubAPI:
         query = """
         query($username: String!) {
           user(login: $username) {
-            repositoriesContributedTo(contributionTypes: [COMMIT, PULL_REQUEST, ISSUE]) {
-              totalCount
-            }
+            createdAt
             pullRequests {
               totalCount
             }
@@ -78,10 +77,6 @@ class GitHubAPI:
               nodes {
                 stargazerCount
               }
-            }
-            contributionsCollection {
-              totalCommitContributions
-              restrictedContributionsCount
             }
           }
         }
@@ -107,14 +102,15 @@ class GitHubAPI:
             return self._fetch_stats_rest()
 
         user = data["data"]["user"]
-        contrib = user["contributionsCollection"]
         repos = user["repositories"]
 
         total_stars = sum(n["stargazerCount"] for n in repos["nodes"])
-        total_commits = (
-            contrib["totalCommitContributions"]
-            + contrib["restrictedContributionsCount"]
-        )
+
+        try:
+            total_commits = self._fetch_total_commits(user["createdAt"])
+        except (requests.exceptions.RequestException, ValueError, KeyError) as e:
+            logger.warning("Could not fetch lifetime commit total (%s), falling back to REST.", e)
+            return self._fetch_stats_rest()
 
         return {
             "commits": total_commits,
@@ -123,6 +119,56 @@ class GitHubAPI:
             "issues": user["issues"]["totalCount"],
             "repos": repos["totalCount"],
         }
+
+    def _fetch_total_commits(self, created_at: str) -> int:
+        """Sum commit contributions across every year since account creation.
+
+        A single contributionsCollection query caps its from/to window at one
+        year and defaults to the trailing 365 days when no window is given,
+        so it can't report a lifetime total on its own - this issues one
+        aliased field per year and adds them up.
+        """
+        start = datetime.fromisoformat(created_at.replace("Z", "+00:00"))
+        now = datetime.now(timezone.utc)
+
+        ranges = []
+        cursor = start
+        while cursor < now:
+            window_end = min(cursor + timedelta(days=365), now)
+            ranges.append((cursor.isoformat(), window_end.isoformat()))
+            cursor = window_end
+
+        if not ranges:
+            return 0
+
+        fragment = "\n".join(
+            f'y{i}: contributionsCollection(from: "{f}", to: "{t}") {{ '
+            f"totalCommitContributions restrictedContributionsCount }}"
+            for i, (f, t) in enumerate(ranges)
+        )
+        query = f"""
+        query($username: String!) {{
+          user(login: $username) {{
+            {fragment}
+          }}
+        }}
+        """
+        resp = self._request(
+            "POST",
+            self.GRAPHQL_URL,
+            json={"query": query, "variables": {"username": self.username}},
+        )
+        resp.raise_for_status()
+
+        data = resp.json()
+        if "errors" in data:
+            raise ValueError(data["errors"])
+
+        user = data["data"]["user"]
+        return sum(
+            user[f"y{i}"]["totalCommitContributions"] + user[f"y{i}"]["restrictedContributionsCount"]
+            for i in range(len(ranges))
+        )
 
     def _fetch_stats_rest(self) -> dict:
         """Fallback: fetch stats via REST API (public data only)."""
