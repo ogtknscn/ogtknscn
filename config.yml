@@ -7,7 +7,7 @@ username: ogtknscn
 profile:
   name: "Sezai Can Ogutken"
   tagline: "Product Manager building AI-augmented development workflows"
-  company: "Hi Games Viam"
+  company: "Rovu Games"
   location: "Turkey"
   bio: |
     Product Manager with a Computer Engineering background, started out
@@ -57,12 +57,9 @@ projects:
   - repo: "ogtknscn/rag-eval-kit"
     arm: 0
     description: "Scores RAG pipeline outputs for context grounding and relevancy."
-  - repo: "ogtknscn/gdd-tool"
-    arm: 1
-    description: "Offline-first visual Game Design Document workspace."
-  - repo: "ogtknscn/viam-site"
-    arm: 2
-    description: "Website for the studio."
+  - repo: "ogtknscn/agentmesh"
+    arm: 0
+    description: "Domain-agnostic multi-agent orchestration kit: apex orchestrator, specialist personas, keyword routing, 3-tier RAG priority ladder."
 
 # Theme color overrides (optional, defaults to deep space palette)
 theme:
